@@ -12,7 +12,8 @@ app.set('view engine','ejs');
 
 app.use(express.static(__dirname));
 
-
+// ref test json file of users
+var data = require('./test.json');
 
 //index/home URL
 app.get('/',(req,res)=>{
@@ -25,6 +26,13 @@ app.get('/',(req,res)=>{
 app.get('/about',(req,res)=>{
     let title = "About Page"
     res.render('pages/about', {'title':title});
+
+});
+
+// users route
+app.get('/users',(req,res)=>{
+    let title = "Users Page"
+    res.render('users/index', {'title':title});
 
 });
 
@@ -46,5 +54,6 @@ app.get('/hobbiessailing',(req,res)=>{
 //Set server to listen for requests
 app.listen(port, () => {
   console.log(`Server running at port: ${port}`);
+  console.log(data);
 });
 
