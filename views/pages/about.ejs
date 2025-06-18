@@ -1,26 +1,30 @@
-      <%- include('../partials/header') %>
-        <h1><%=title%></h1>
+<%- include('../partials/header') %>
+<h1 style="text-align: center;"><%= title %></h1>
 
-          <div class="about-box">
-          <p>Hey, I’m Andrei — I’m currently learning web development and diving into Node.js, React, and front-end tech. I’m part of the MAXX Potential internship and a QA bootcamp, gaining hands-on experience with building projects and testing software.</p>
+<div style="float: left; margin-right: 2rem;">
+  <img src="/public/images/about.jpg" 
+       alt="About Me" 
+       style="width: 250px; height: 350px; object-fit: cover; border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+</div>
 
-          <p>I’m into figuring out how things work, fixing bugs, and building apps that are actually useful. I like learning by doing — and breaking stuff along the way if that’s what it takes.</p>
+<div class="about-box" style="overflow: hidden;">
+  <p>Hey, I’m Andrei — I’m currently learning web development and diving into Node.js, React, and front-end tech. I’m part of the MAXX Potential internship and a QA bootcamp, gaining hands-on experience with building projects and testing software.</p>
 
-          <h3>Some of my hobbies:</h3>
-          <ul>
-            <li>Longboarding</li>
-            <li>Surfing</li>
-            <li>Hiking</li>
-            <li>Camping</li>
-            <li>Nature photography</li>
-            <li>Snowboarding</li>
-            <li>Thai Boxing</li>
-            <li>Travel</li>
-            <li>Dreaming of getting a street bike</li>
-          </ul>
-          </div>
+  <p>I’m into figuring out how things work, fixing bugs, and building apps that are actually useful. I like learning by doing — and breaking stuff along the way if that’s what it takes.</p>
 
+  <h3>Some of my hobbies:</h3>
+  <ul>
+    <li>Longboarding</li>
+    <li>Surfing</li>
+    <li>Hiking</li>
+    <li>Camping</li>
+    <li>Nature photography</li>
+    <li>Snowboarding</li>
+    <li>Thai Boxing</li>
+    <li>Travel</li>
+    <li>Tatoos</li>
+    <li>Dreaming of getting a street bike</li>
+  </ul>
+</div>
 
-
-      <%- include('../partials/footer') %>
-
+<%- include('../partials/footer') %>
