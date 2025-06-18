@@ -14,8 +14,10 @@
     "ejs": "^3.1.10",
     "express": "^5.1.0",
     "express-session": "^1.18.1",
+    "method-override": "^3.0.0",
     "mongodb": "^6.17.0",
     "mongoose": "^8.16.0",
-    "moongoose": "^0.0.5"
+    "moongoose": "^0.0.5",
+    "multer": "^2.0.1"
   }
 }
